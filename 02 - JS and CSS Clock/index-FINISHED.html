@@ -81,7 +81,6 @@
       const seconds = now.getSeconds();
       const minutes = now.getMinutes();
       const hours = now.getHours();
-      console.log(hours);
       const secondsDegrees = ((seconds / 60) * 360) + 90; // Zmienia sekundy na kąt pod jakim ma sie ustawić wskazówka sekundowa. Dodano 90 (stopni) na końcu aby zrównoważyć kąt o który zostały przsunięte wskazówki (transform: rotate(90deg)) (z pozycji poziomej (godz. 9) do pionowej (godz. 12))
       const minutesDegrees = ((minutes / 60) * 360) + 90;
       const hoursDegrees = ((hours / 12) * 360) + 90;
