@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Reference VS Copy</title>
+</head>
+
+<body>
+
+  <script>
+    // start with strings, numbers and booleans
+    let mart = 'mart';
+    let bart = 'bart';
+    console.log(mart, bart);
+
+    mart = 'Martin'
+    console.log(mart, bart);
+
+    // Let's say we have an array
+    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+
+    // and we want to make a copy of it.
+    const players2 = players;
+    console.log(players, players2);
+    players2[1] = 'mart';
+    console.log(players, players2);
+
+    const players3 = players.slice()
+    players3[1] = 'AAAA';
+
+    console.log(players, players3);
+
+    const players4 = [].concat(players);
+    players[1] = 'BBB';
+    console.log(players, players4);
+    
+    
+  </script>
+
+</body>
+
+</html>
