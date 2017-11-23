@@ -12,6 +12,11 @@ body {
   box-sizing: inherit;
 }
 
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow:0 5px 0 rgba(0,0,0,0.1);
+ }
+
 .site-wrap {
   max-width: 700px;
   margin: 70px auto;
@@ -21,6 +26,10 @@ body {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
   transform: scale(0.98);
   transition: transform 0.5s;
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1)
 }
 
 header {
@@ -74,6 +83,10 @@ li.logo {
 
 li.logo a {
   color:black;
+}
+
+body.fixed-nav li.logo {
+  max-width: 300px;
 }
 
 nav a {
