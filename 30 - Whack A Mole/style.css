@@ -12,6 +12,7 @@ body {
   padding: 0;
   margin:0;
   font-family: 'Amatic SC', cursive;
+  text-align: center
 }
 
 h1 {
@@ -66,4 +67,20 @@ h1 {
 
 .hole.up .mole {
   top:0;
+}
+
+button {
+  margin-top: 30px;
+  width: 125px;
+  /* height: 50px; */
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 4rem;
+  outline:  none;
+  background-color: #ffc600;
+  border: 2px dashed black
+}
+
+button:hover {
+  border: 2px solid black
 }
